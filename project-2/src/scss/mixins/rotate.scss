@@ -1,5 +1,0 @@
-@mixin rotate($arguments...) {
-  -webkit-transform: rotate($arguments);
-      -ms-transform: rotate($arguments); // IE9
-          transform: rotate($arguments);
-};
