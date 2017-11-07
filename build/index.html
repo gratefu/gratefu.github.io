@@ -1,0 +1,295 @@
+<!DOCTYPE html>
+<html class="page-index" lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="My second project">
+    <title>Internet-market
+    </title>
+    <link rel="stylesheet" href="css/main.css?v=1510071973873">
+  </head>
+  <body>
+    <header class="page-header">
+      <div class="content-wrappper">
+        <div class="page-header__inner">
+          <button class="page-header__icon page-header__hamburger is-not-desktop" type="button">
+            <svg>
+              <use xlink:href="images/sprites.svg#hamburger"></use>
+            </svg>
+          </button>
+          <button class="page-header__icon page-header__search-toggle is-not-desktop" type="button">
+            <svg>
+              <use xlink:href="images/sprites.svg#search"></use>
+            </svg>
+          </button><a class="logo page-header__logo" href="index.html">Logo</a>
+          <div class="city-choose page-header__city-choose"><a class="city-choose__target" href="javascript:void(0);">
+              <svg>
+                <use xlink:href="images/sprites.svg#down-arrow"></use>
+              </svg><span>Lviv</span></a>
+            <ul class="city-choose__dropdown">
+              <li><a href="javascript:void(0);">Kyiv</a></li>
+              <li><a href="javascript:void(0);">Odessa</a></li>
+              <li><a href="javascript:void(0);">Kharkiv</a></li>
+            </ul>
+          </div>
+          <div class="phone page-header__phone"> <a class="phone__link" href="tel:3(XXX) XXX XX XX">3(XXX) XXX XX XX</a><span class="phone__info">From 9 to 12</span>
+            <div class="phone__connection">
+              <div class="page-header__dropdown callback phone__callback"><a href="javascript:void(0);">Callback</a>
+                <div class="popup callback__popup page-header__callback-popup">
+                  <div class="popup__inner">
+                    <form class="popup__form callback__form" action="#" id="page-header__callback">
+                      <button class="btn-close btn-close--animated popup__close">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#close"></use>
+                        </svg>
+                      </button>
+                      <div class="popup__title">Call me</div>
+                      <div class="popup__control">
+                        <label class="popup__label">
+                          <input class="popup__input" type="text" placeholder="Ім'я" required>
+                        </label>
+                      </div>
+                      <div class="popup__control">
+                        <div class="popup__label">
+                          <input class="popup__input" type="tel" placeholder="Телефон" required id="page-header__phone-input">
+                        </div>
+                      </div>
+                      <div class="popup__control">
+                        <label class="label-checkbox popup__label-checkbox">
+                          <input type="checkbox" checked>
+                          <div class="label-checkbox__custom">
+                            <svg>
+                              <use xlink:href="images/sprites.svg#check"></use>
+                            </svg>
+                          </div><span>I agree to the processing of my personal data</span>
+                          <button class="popup__submit">Submit</button>
+                        </label>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="page-header__dropdown feedback phone__feedback"><a href="javascript:void(0);">Feedback</a>
+                <div class="popup callback__popup page-header__callback-popup">
+                  <div class="popup__inner">
+                    <form class="popup__form callback__form" action="#" id="page-header__feedback">
+                      <button class="btn-close btn-close--animated popup__close">
+                        <svg>
+                          <use xlink:href="images/sprites.svg#close"></use>
+                        </svg>
+                      </button>
+                      <div class="popup__title">Feedback</div>
+                      <div class="popup__control">
+                        <div class="popup__target">Choose your theme</div>
+                        <div class="popup__dropdown">
+                          <ul class="popup__list">
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                            <li><a href="javascript:void(0);">Lorem ipsum</a></li>
+                          </ul>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <ul class="page-header__list">
+            <li class="page-header__item"><a class="page-header__account-link" href="#main-popup--account">Enter account</a>
+              <div class="main-popup main-popup--account mfp-hide" id="main-popup--account">
+                <div class="main-popup__inner">
+                  <form class="popup__form" action="#" id="page-header__account">
+                    <div class="popup__title">Enter</div>
+                    <div class="popup__control">
+                      <label class="popup__label">
+                        <input class="popup__input" type="text" placeholder="Ім'я" required>
+                      </label>
+                    </div>
+                    <div class="popup__control">
+                      <div class="popup__label">
+                        <input class="popup__input" type="tel" placeholder="Телефон" required id="page-header__phone-account-input">
+                      </div>
+                    </div>
+                    <div class="popup__control">
+                      <button class="popup__submit popup__submit--account">ENTER</button>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </li>
+            <li class="page-header__item"><a href="javascript:void(0);">Shops</a></li>
+            <li class="page-header__item"><a href="javascript:void(0);">Shipping and payment</a></li>
+            <li class="page-header__item"><a href="javascript:void(0);">About us</a></li>
+          </ul><a class="page-header__icon page-header__callback is-mobile-only" href="javascript:void(0);">
+            <svg>
+              <use xlink:href="images/sprites.svg#phone"></use>
+            </svg></a><a class="page-header__icon page-header__basket" href="javascript:void(0);">
+            <svg>
+              <use xlink:href="images/sprites.svg#basket"></use>
+            </svg></a>
+        </div>
+      </div>
+    </header>
+    <div class="catalog is-hidden" id="catalog">
+      <div class="content-wrappper">
+        <div class="catalog__inner">
+          <div class="catalog__header is-not-desktop"><span>Catalog</span>
+            <button class="btn-close btn-close--animated popup__close catalog__btn-close">
+              <svg>
+                <use xlink:href="images/sprites.svg#close"></use>
+              </svg>
+            </button>
+          </div>
+          <ul class="catalog__list">
+            <li class="catalog__item catalog__item--first-lvl catalog__item--catalog"><a class="catalog__link" href="javascript:void(0);">Catalog</a>
+              <ul class="catalog__list catalog__list--second-lvl">
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Sofas</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sofas-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sofas-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sofas-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sofas-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Cabinets</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Cabinets-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Cabinets-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Cabinets-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Cabinets-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Living rooms</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Living rooms-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Living rooms-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Living rooms-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Living rooms-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Bedrooms</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Bedrooms-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Bedrooms-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Bedrooms-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Bedrooms-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Hallways</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Hallways-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Hallways-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Hallways-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Hallways-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Office</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Office-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Office-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Office-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Office-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl catalog__link--catalog" href="javascript:void(0);">Sale</a>
+                  <ul class="catalog__list catalog__list--third-lvl">
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sale-1</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sale-2</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sale-3</a></li>
+                    <li class="catalog__item catalog__item--third-level"><a class="catalog__link catalog__link--third-lvl" href="javascript:void(0);">Sale-4</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Sofas</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sofas-1</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sofas-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sofas-3</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sofas-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Cabinets</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Cabinets-1</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Cabinets-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);"> Cabinets-3</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Cabinets-4</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Cabinets-5</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Cabinets-6</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Cabinets-7</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Living rooms</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Living rooms-1</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Living rooms-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);"> Living rooms-3</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Living rooms-4</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Living rooms-5</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Living rooms-6</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Bedrooms</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Bedrooms-1</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Bedrooms-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);"> Bedrooms-3</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Bedrooms-4</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Children's</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Children's-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Children's-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);"> Children's-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Children's-2</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Kitchens</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Kitchens-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Kitchens-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Kitchens-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Kitchens-2</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Hallways</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Hallways-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Hallways-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);"> Hallways-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Hallways-2</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Office</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Office-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Office-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Living Office-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Office-2</a></li>
+                  </ul>
+                </li>
+                <li class="catalog__item catalog__item--first-lvl"><a class="catalog__link" href="javascript:void(0);">Sale</a>
+                  <ul class="catalog__list catalog__list--second-lvl">
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sale-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sale-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);"> Sale-2</a></li>
+                    <li class="catalog__item catalog__item--second-level"><a class="catalog__link catalog__link--second-lvl" href="javascript:void(0);">Sale-2</a></li>
+                  </ul>
+                </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="discounts-dropdown"><a class="discounts-dropdown__visible" href="javascript:void(0);">discounts</a><span class="discounts-dropdown__hidden">Discounts for you</span></div>
+    <script src="js/vendor.js?v=1510071973875"></script>
+    <script src="js/main.js?v=1510071973875"></script>
+  </body>
+</html>
