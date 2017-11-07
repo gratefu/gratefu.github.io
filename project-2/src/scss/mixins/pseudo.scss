@@ -1,0 +1,20 @@
+@mixin pseudo($pseudoelement,$display: block, $pos: absolute, $content: ''){
+	
+	@if $pseudoelement == 'before' {
+		&::before{
+	    content: $content;
+	    display: $display;
+	    position: $pos;
+	    @content;
+		}
+	}
+
+	@else if $pseudoelement == 'after' {
+		&::after{
+			content: $content;
+	    display: $display;
+	    position: $pos;	
+	    @content;
+		}
+	}
+}

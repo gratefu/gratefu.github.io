@@ -1,0 +1,12 @@
+@mixin link ($link:inherit, $hover:inherit, $active:inherit) {
+    & {
+        color: $link;
+				
+        &:hover {
+          color: $hover;
+        }
+        &:active, &:focus {
+            color: $active;
+        }
+    }
+}

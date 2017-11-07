@@ -1,0 +1,21 @@
+// stylelint-disable at-rule-empty-line-before
+
+@import "global/vars";
+@import "functions";
+@import "sprites";
+@import "vendor/vendor";
+@import "mixins";
+@import "global/fonts";
+@import "global/typography";
+@import "global/base";
+
+// COMMON BLOCS STYLES
+@import "../blocks/common/page-header/page-header";
+@import "../blocks/common/catalog/catalog";
+@import "../blocks/common/discounts-dropdown/discounts-dropdown";
+@import "../blocks/common/page-footer/page-footer";	
+
+
+// PAGES STYLES
+@import "pages/index";
+

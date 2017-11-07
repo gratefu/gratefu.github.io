@@ -1,0 +1,23 @@
+.product-line--news{
+
+	.product-item{
+		&--product-line{
+			@include media-breakpoint-up(md) {
+				height: 400px;
+				@include make-col(3);
+			}
+		}
+	}
+
+	.product-line__control{
+	 	&::after{
+	 		border: 2px solid $color-product--type;
+	 	}		
+		svg{
+			fill:$color-product--type;
+		}
+	}
+}
+
+
+

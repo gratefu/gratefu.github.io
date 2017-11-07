@@ -1,0 +1,29 @@
+
+@mixin hover-bigger($acale:1.05,$bg-color:transparent,$border-color:transparent,$border-radius:50%,$transition:$transition-base){
+
+
+	 &  * {
+	 	position: relative;
+		z-index: 1;
+	}
+
+
+	&::after{
+		content:"";
+		@include absolute-all();
+		transform:scale(1);
+		background-color:$bg-color;
+		border: 1px solid #{$border-color};
+		border-radius:$border-radius;
+		transition:$transition;
+	}
+	.no-touch &:hover{
+			&::after{
+				transform:scale(#{$acale});
+				border-radius:$border-radius;
+			}
+	}
+
+	@content;
+
+}

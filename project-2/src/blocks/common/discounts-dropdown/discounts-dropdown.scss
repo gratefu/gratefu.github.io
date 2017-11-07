@@ -1,0 +1,43 @@
+.discounts-dropdown {
+	display: none;
+
+	@include media-breakpoint-up(lg) {
+		display: block;
+	  font-size : 10px;
+	  text-transform : uppercase;
+	  position : fixed;
+	  top : 50%;
+	  transform : translateY(-50%);
+	  z-index: 9995;
+	  border : 1px solid $color-city-choose__dropdown;
+	  border-radius: 0 10px 10px 0;
+	  padding : 10px;
+	  cursor : pointer;
+	  display : flex;
+	  align-items: center;
+	  max-width: 150px;
+	  width: 75px;
+	 	transition:all .4s ease;
+	 	overflow-x: hidden;
+	   &:hover{
+	  	width: 150px;
+	  	border-color : $color-city-choose__dropdown--li;
+	  	.discounts-dropdown__visible{
+	  		color: $color-accent;
+	  	}
+	  } 
+		
+		&.is-hidden{
+			display: none;
+		}
+	
+	}
+
+
+
+}
+
+.discounts-dropdown__visible {
+	padding-right: 10px;
+  }
+

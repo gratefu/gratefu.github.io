@@ -1,0 +1,103 @@
+header.page-header
+	.content-wrappper
+		.page-header__inner
+			button(type="button").page-header__icon.page-header__hamburger.is-not-desktop
+				+svg("hamburger")
+			button(type="button").page-header__icon.page-header__search-toggle.is-not-desktop
+				+svg("search")
+
+			a(href="index.html").logo.page-header__logo Logo
+
+			.city-choose.page-header__city-choose
+				a(href="javascript:void(0);").city-choose__target
+					+svg("down-arrow")
+					span Lviv
+				ul.city-choose__dropdown
+					li: a(href="javascript:void(0);") Kyiv
+					li: a(href="javascript:void(0);") Odessa
+					li: a(href="javascript:void(0);") Kharkiv
+
+
+
+			.phone.page-header__phone 
+				a(href="tel:3(XXX) XXX XX XX").phone__link 3(XXX) XXX XX XX
+				span.phone__info From 9 to 12
+				.phone__connection
+					.page-header__dropdown.callback.phone__callback
+						a(href="javascript:void(0);") Callback
+
+						.popup.callback__popup.page-header__callback-popup
+							.popup__inner
+								form(action="#").popup__form.callback__form#page-header__callback
+									button.btn-close.btn-close--animated.popup__close
+										+svg("close")
+									.popup__title Call me
+									.popup__control
+										label.popup__label
+											input(type="text" placeholder="Ім'я" required).popup__input
+									.popup__control
+										.popup__label
+											input(type="tel" placeholder="Телефон" required).popup__input#page-header__phone-input
+									.popup__control
+										label.label-checkbox.popup__label-checkbox
+											input(type="checkbox" checked)
+											.label-checkbox__custom
+												+svg("check")
+											span I agree to the processing of my personal data
+											button.popup__submit Submit
+
+
+
+
+					.page-header__dropdown.feedback.phone__feedback
+						a(href="javascript:void(0);") Feedback
+
+						.popup.callback__popup.page-header__callback-popup
+							.popup__inner
+								form(action="#").popup__form.callback__form#page-header__feedback
+									button.btn-close.btn-close--animated.popup__close
+										+svg("close")
+									.popup__title Feedback
+									.popup__control
+										.popup__target Choose your theme
+										.popup__dropdown
+											ul.popup__list
+												li: a(href="javascript:void(0);") Lorem ipsum
+												li: a(href="javascript:void(0);") Lorem ipsum
+												li: a(href="javascript:void(0);") Lorem ipsum
+												li: a(href="javascript:void(0);") Lorem ipsum
+												li: a(href="javascript:void(0);") Lorem ipsum
+												li: a(href="javascript:void(0);") Lorem ipsum
+												li: a(href="javascript:void(0);") Lorem ipsum
+
+
+
+
+			ul.page-header__list
+				li.page-header__item
+					a(href="#main-popup--account").page-header__account-link Enter account
+					
+					.main-popup.main-popup--account#main-popup--account.mfp-hide
+						.main-popup__inner
+							form(action="#").popup__form#page-header__account
+								.popup__title Enter
+								.popup__control
+									label.popup__label
+										input(type="text" placeholder="Ім'я" required).popup__input
+								.popup__control
+									.popup__label
+										input(type="tel" placeholder="Телефон" required).popup__input#page-header__phone-account-input
+								.popup__control
+									button.popup__submit.popup__submit--account ENTER
+
+
+
+				li.page-header__item: a(href="javascript:void(0);") Shops
+				li.page-header__item: a(href="javascript:void(0);") Shipping and payment
+				li.page-header__item: a(href="javascript:void(0);") About us
+
+
+			a(href="javascript:void(0);").page-header__icon.page-header__callback.is-mobile-only
+				+svg("phone")
+			a(href="javascript:void(0);").page-header__icon.page-header__basket
+				+svg("basket")

@@ -1,0 +1,6 @@
+@mixin is-shown() {
+	&.is-shown{
+		display: block;
+		@content;
+	}
+}

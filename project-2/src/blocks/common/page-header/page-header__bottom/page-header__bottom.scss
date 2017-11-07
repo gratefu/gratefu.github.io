@@ -1,0 +1,56 @@
+.page-header__bottom{
+		display: none;
+
+		@include media-breakpoint-up(md) {
+			display: block;
+			background-color: $color-bg--darken;
+			font-size: 11px;
+			color: #fff;
+		}
+
+			@include media-breakpoint-up(lg) {
+				font-size: 13px;
+			}
+}
+
+
+.main-nav{
+	&__list{
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+
+	 &__item{
+			&:hover{
+				background-color: $color-main-nav--link;
+			}
+			&:first-child{
+					position: relative;
+			}
+	}
+
+
+	&__link{
+			display: block;
+			padding: 0.9em 1.5em;
+
+			&--catalog-trigger{
+				display: flex;
+				align-items: center;
+				padding-left: 3em;
+				padding-right: 6em;
+				background-color: $color-main-nav--link;
+				svg{
+					fill:#fff;
+					width: 20px;
+					height: 20px;
+					margin-right: 10px;
+				}
+			}
+			
+	}
+
+
+}
+

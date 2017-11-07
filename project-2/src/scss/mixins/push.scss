@@ -1,0 +1,16 @@
+@mixin push($position:both) {
+  
+  @if $position == 'both' {
+    margin-left: auto;
+    margin-right: auto;
+  }
+  @else if $position == 'left' {
+    margin-left: auto;
+  }
+  @else if $position == 'right' {
+    margin-right: auto;
+  }
+  @else if $position == 'all' {
+    margin: auto;
+  }
+}

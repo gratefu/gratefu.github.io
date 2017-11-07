@@ -1,0 +1,20 @@
+include ../../../pug/mixins/product-item
+
+section.product-line.product-line--news
+	.content-wrap
+		.product-line__inner
+			.product-line__header
+				a(href="smartphones.html").product-line__link.product-line__link--news
+					span.product-line__title Новинки
+					.product-line__control
+						+svg("arrow-pointing-to-right")
+			
+			.content-wrap
+				.content-wrap__inner
+					+product-item("images/product-item-1.jpg")
+					+product-item("images/product-item-1.jpg")
+					+product-item("images/product-item-1.jpg")
+					+product-item("images/product-item-1.jpg")
+					.product-line__arrows
+						.slideCount
+

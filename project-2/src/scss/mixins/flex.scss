@@ -1,0 +1,6 @@
+@mixin flex($wrap :wrap,$just-cont:space-between,$al-items:center) {
+  display : flex;
+  flex-wrap : $wrap;
+  justify-content : $just-cont;
+  align-items :$al-items;
+}

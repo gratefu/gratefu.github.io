@@ -1,0 +1,5 @@
+@mixin is-hidden() {
+  &.is-hidden{
+    display: none;  
+  }  
+}

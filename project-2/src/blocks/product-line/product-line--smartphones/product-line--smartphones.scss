@@ -1,0 +1,22 @@
+.product-line--smartphones{
+	
+	.product-line__header{
+		background-color: $color-product-line--smartphones-header;
+		color: #fff;
+	}
+
+	.content-wrap{
+		margin-top: -6px;
+	}
+
+	.product-line__control{
+	 	&::after{
+	 		border: 1px solid #fff;
+	 	}		
+		svg{
+			fill:#fff;
+		}
+	}
+
+
+}

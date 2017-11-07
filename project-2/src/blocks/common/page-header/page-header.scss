@@ -1,0 +1,418 @@
+.page-header {
+  $padding-page-header :10px 0;
+  $padding-page-header__inner :0 10px;
+  $padding-page-header__icon : 0 10px;
+
+  padding : $padding-page-header;
+
+  &__inner {
+    @include flex($wrap :wrap,$just-cont:space-between,$al-items:center);
+    padding :$padding-page-header__inner;
+    }
+
+  &__left
+  ,
+  &__right {
+    display : flex;
+    }
+
+  &__icon {
+    display : block;
+    padding : $padding-page-header__icon;
+
+    svg {
+      @include size(18px)
+      }
+    }
+
+  &__hamburger {
+    svg {
+      @include size(28px);
+      }
+    }
+
+  &__logo {
+    font-size : 30px;
+    @include push($position :both)
+    @include media-breakpoint-up(lg) {
+      margin : 0;
+      }
+    }
+
+  &__phone {
+    display : none;
+    @include media-breakpoint-up(md) {
+      display : block;
+      margin-right : 100px;
+      }
+
+    @include media-breakpoint-up(md) {
+      display : block;
+      margin-right : 0;
+      }
+
+    }
+
+  &__list {
+    display : none;
+    @include media-breakpoint-up(lg) {
+      display : flex;
+      }
+    }
+
+  &__item {
+    font-size : 13px;
+    margin-right : 30px;
+    border-bottom : 1px solid transparent;
+
+    &:hover {
+      border-bottom : 1px solid $color-phone__callback;
+      }
+    }
+
+  &__basket {
+    &:hover {
+      svg {
+        fill :$color-accent;
+        }
+      }
+    }
+
+  &__city-choose {
+    display : none;
+    @include media-breakpoint-up(xl) {
+      display : block;
+      }
+    }
+
+  &__dropdown {
+    position : relative;
+    }
+
+  &__callback-popup {
+    top : 155%;
+    transform :translateX(-30%);
+    }
+
+  }
+
+.logo {
+  display : block;
+  }
+
+.phone {
+  &__link {
+    margin-right : 10px;
+    font-weight : bold;
+
+    @include media-breakpoint-up(lg) {
+      display : inline-block;
+      margin-bottom : 5px;
+      }
+
+    &:hover {
+      color : $color-accent;
+      }
+    }
+
+  &__info {
+    font-size : 11px;
+    color :$color-phone__info;
+    margin-right : 10px;
+    @include hover($color :$color-accent,$bg:transparent)
+    }
+
+  &__connection {
+    display : none;
+    @include media-breakpoint-up(lg) {
+      display : flex;
+      }
+    }
+
+  &__callback {
+    margin-right : 15px;
+    }
+
+  &__callback
+  ,
+  &__feedback {
+    a {
+      border-bottom : 1px solid transparent;
+
+      &:hover {
+        border-bottom : 1px solid $color-phone__callback;
+        }
+      }
+    }
+
+  }
+
+.city-choose {
+  position : relative;
+  max-width : 15%;
+  width : 100%;
+  margin-top :-15px;
+  padding : 15px 0 0 15px;
+
+  &:hover {
+    & .city-choose__dropdown {
+      opacity : 1;
+      visibility : visible;
+      transition-delay : 0s;
+      }
+    }
+
+  &__target {
+    position : relative;
+    z-index : 2;
+
+    &:hover {
+      color :$color-city-choose__dropdown--li;
+
+      svg {
+        fill :$color-city-choose__dropdown--li;
+        }
+      }
+
+    svg {
+      width : 10px;
+      height :10px;
+      margin-right : 5px;
+      }
+    }
+
+  &__dropdown {
+    opacity : 0;
+    visibility : hidden;
+    transition : visibility 0s ease-out .5s,opacity .2s ease-out,border-color .2s ease-out;
+    position : absolute;
+    z-index : 1;
+    left : 0;
+    top : 0;
+    width : 100%;
+    background-color : #fff;
+    padding : 35px 0 15px 15px;
+    border : 1px solid $color-city-choose__dropdown;
+
+    li {
+      font-size : 12px;
+      margin-bottom : 8px;
+      @include hover($color :$color-city-choose__dropdown--li,$bg:transparent)
+      }
+    }
+
+  }
+
+.popup {
+  visibility : hidden;
+  background-color : #fff;
+  opacity : 0;
+  position : absolute;
+  z-index : 10;
+  text-align : center;
+  border : 1px solid $color-city-choose__dropdown;
+  min-width : 300px;
+  padding : 20px 10px;
+
+  &.is-shown {
+    visibility : visible;
+    opacity : 1;
+    transition : opacity .1s linear;
+    }
+
+  &.is-hide {
+    visibility : hidden;
+    opacity : 0;
+    transition : visibility 0s .1s, opacity .1s linear;
+    }
+
+  &__title {
+    font-size : 18px;
+    font-weight : 400;
+    margin-bottom : 20px;
+    }
+
+  &__close {
+    position : absolute;
+    right : 10px;
+    }
+
+  &__form {
+    width : 100%;
+
+    &.is-hide {
+      visibility : hidden;
+      opacity : 0;
+      transition : visibility 0s .1s, opacity .1s linear;
+      }
+    }
+
+  &__control {
+    position : relative;
+    margin-bottom : 15px;
+
+    &:last-child {
+      margin-bottom : 0;
+      }
+    }
+
+  &__input {
+    width : 100%;
+    border : 1px solid $color-popup__input;
+    font-size : 12px;
+    padding : 7px 15px;
+    padding-right : 33px;
+
+    &:focus
+    ,&:hover {
+      border-color : $color-city-choose__dropdown--li;
+      outline : none;
+      }
+    }
+
+  &__label {
+    position : relative;
+
+    &:hover {
+      &::after {
+        opacity : 1;
+        visibility :visible;
+        }
+      }
+    @include pseudo(after,$display : block, $pos: absolute, $content: '') {
+      background-image : url('../images/sprites/svg/pen.svg');
+      background-size : 100%;
+      @include size(9px)
+      @include absolute-center(vertical);
+      right :15px;
+      opacity : 0;
+      visibility :hidden;
+      transition : opacity .2s ease-out,border-color .2s ease-out;
+      }
+    }
+
+  &__submit {
+    cursor : pointer;
+    display : block;
+    margin-top : 15px;
+    width : 100%;
+    padding : 7px 0;
+    color :#fff;
+    background-color : #D6D6D6;
+
+    &--account {
+        background-color : $color-accent;
+      }
+
+    }
+
+  &__target {
+    cursor : pointer;
+    position : relative;
+    width : 100%;
+    border : 1px solid $color-city-choose__dropdown--li;
+    font-size : 12px;
+    padding : 7px 15px;
+    padding-right : 33px;
+    transition :all .25s ease;
+    }
+
+  &__dropdown {
+    display : none;
+    position : absolute;
+    top : 100%;
+    background-color : #fff;
+    border : 1px solid $color-city-choose__dropdown;
+    z-index : 11;
+    padding : 15px 0;
+    width : 100%;
+    text-align : center;
+    @include is-shown();
+    }
+
+  &__list {
+    li {
+      margin-bottom : 7px;
+
+      &:last-child {
+        margin-bottom : 0;
+        }
+      }
+    }
+
+  }
+
+.btn-close {
+  &:hover {
+    svg {
+      @include rotate(180deg);
+      fill :$color-btn-close__svg--hover;
+      }
+    }
+
+  svg {
+    transition :all .5s ease;
+    width : 20px;
+    height :20px;
+    fill :rgba(gray,.8);
+    }
+  }
+
+.label-checkbox {
+  user-select :none;
+  cursor : pointer;
+  text-align : left;
+
+  input[type="checkbox"] {
+    display : none;
+
+    &:checked {
+       ~ .label-checkbox__custom {
+        svg {
+          display : block;
+          }
+        }
+
+       ~ .popup__submit {
+        background-color : $color-accent;
+        }
+      }
+    }
+
+  span {
+    font-size : 12px;
+    line-height : 1.6;
+    }
+  }
+
+.label-checkbox__custom {
+  display : inline-block;
+  vertical-align : middle;
+  border : 1px solid $color-city-choose__dropdown--li;
+  @include size(18px);
+  position : relative;
+  margin-right : 10px;
+
+  svg {
+    display : none;
+    @include size(85%);
+    fill :red;
+    @include absolute-center(both);
+    }
+  }
+
+.main-popup {
+  position : relative;
+  background-color : #fff;
+  margin :auto;
+  padding : 20px;
+  }
+
+.main-popup--account {
+  max-width : 375px;
+  }
+
+
+
+
+
